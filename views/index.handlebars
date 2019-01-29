@@ -1,26 +1,30 @@
 <div class="col">
-    <h2>Burgers Not Eaten!</h2>
+    <h2>Click a Burger to Devour It!</h2>
     <ul class="list-group">
         {{#each burgers}}
+        {{#unless this.devoured}}
         <li class="list-group-item-action change-burger">
-            <button data-id={{id}} devoured={{devoured}}>
-            {{id}}. {{burger_name}}
+            <button type="button" class="btn" data-id={{id}} devoured=0>
+                {{id}}. {{burger_name}}
             </button>
         </li>
+        {{/unless}}
         {{/each}}
-        
+
     </ul>
 </div>
 
 <div class="col">
-    <h2>Burgers Eaten!</h2>
+    <h2>Burgers Devoured!</h2>
     <ul class="list-group">
-        <li class="list-group-item-action change-burger">
         {{#each burgers}}
         {{#if this.devoured}}
-        <input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
-        {{/if}}
+        <li class="list-group-item-action">
+            <button type="button" class="btn" disabled>
+                {{id}}. {{burger_name}}
+            </button>
         </li>
+        {{/if}}
         {{/each}}
     </ul>
 </div>
