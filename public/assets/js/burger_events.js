@@ -1,20 +1,16 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
-    $(".change-burger").on("click", function (event) {
+    $(".list-group").on("click", "button", function (event) {
         var id = $(this).data("id");
-        var devoured = $(this).data("true");
+        var devoured = $(this).attr("devoured");
 
         console.log(id);
         console.log(devoured);
 
-        var eaten = {
-            devoured: true
-        };
-
         // Send the PUT request.
-        $.ajax("/api/burgers/" + id, {
-            type: "PUT",
-            data: eaten
+        $.ajax({
+            url: "/api/burgers/" + id,
+            type: "PUT"
         }).then(
             function () {
                 console.log("changed burger to", devoured);
@@ -32,7 +28,7 @@ $(function () {
             name: $("#newburger").val().trim(),
         };
 
-        console.log ("New Burger " + newBurger);
+        console.log ("New Burger ", newBurger);
 
         // Send the POST request.
         $.ajax("/api/burgers", {

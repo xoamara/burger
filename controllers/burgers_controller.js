@@ -17,20 +17,19 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-    burger.insertOne(["burger_name", "devoured"], [req.body.name], function(result) {
+    burger.insertOne(["burger_name"], [req.body.name], function(result) {
         res.json({ id: result.insertId });
     });
 });
 
 
-router.put("/api/cats/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
     let status = "id = " + req.params.id;
 
     console.log("status", status);
+    console.log(req.body);
 
-    burger.updateOne({
-        devoured: req.body.devoured
-    }, status, function (result) {
+    burger.updateOne(req.params.id, function (result) {
         if (result.changedRows == 0) {
             return res.status(404).end();
         } else {

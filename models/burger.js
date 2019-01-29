@@ -7,17 +7,17 @@ let burger = {
             callback(res);
         })
     },
-    insertOne: function () {
-        orm.insertOne("burgers"), function(res) {
+    insertOne: function (colName, colValue, callback) {
+        orm.insertOne("burgers", colName, colValue, function(res) {
             callback(res);
-            console.log("I am the result!" + res);
-        }
+            console.log("I am the result!", res);
+        })
     },
-    updateOne: function () {
-        orm.updateOne("burgers"), function(res) {
+    updateOne: function (idValue, callback) {
+        orm.updateOne("burgers", "devoured", true, idValue, function(res) {
             callback(res);
-            console.log("I am the result!" + res);
-        }
+            console.log("I am the result!", res);
+        })
     }
 
 };
