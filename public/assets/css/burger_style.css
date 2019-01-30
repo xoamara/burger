@@ -4,8 +4,23 @@ h2 {
 
 body, button {
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(blue);
 }
 
 .list-group-item {
     padding: .25rem 1.25rem;
+}
+
+#grad1 {
+    height: auto;
+    background-color: white;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(white, yellow, red);
+    /* Standard syntax (must be last) */
+}
+
+img {
+    vertical-align: bottom;
+    border-style: none;
+    width: 25%;
 }
