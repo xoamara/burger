@@ -1,47 +1,59 @@
-<div class="col">
-    <h2>Click a Burger to Devour It!</h2>
-    <ul class="list-group">
-        {{#each burgers}}
-        {{#unless this.devoured}}
-        <li class="list-group-item-action change-burger">
-            <button type="button" class="btn" data-id={{id}} devoured=0>
-                {{id}}. {{burger_name}}
-            </button>
-        </li>
-        {{/unless}}
-        {{/each}}
-
-    </ul>
-</div>
-
-<div class="col">
-    <h2>Burgers Devoured!</h2>
-    <ul class="list-group">
-        {{#each burgers}}
-        {{#if this.devoured}}
-        <li class="list-group-item-action">
-            <button type="button" class="btn" disabled>
-                {{id}}. {{burger_name}}
-            </button>
-        </li>
-        {{/if}}
-        {{/each}}
-    </ul>
-</div>
-
 <div class="row">
-    <div class="col-lg">
-        <br>
-        <br>
-        <br>
-        <form class="create-form">
+    <div class="col">
+        <h2 class="pb-3 text-center">Click a Burger to Devour It!</h2>
+        <ul class="list-group">
+            {{#each burgers}}
+            {{#unless this.devoured}}
+            <li class="list-group-item list-group-item-action change-burger">
+                <button type="button" class="btn" data-id={{id}} devoured=0>
+                    {{id}}. {{burger_name}}
+                </button>
+            </li>
+            {{/unless}}
+            {{/each}}
 
-            <div class="form-group">
-                <input type="text" id="newburger" name="name">
+        </ul>
+    </div>
+
+    <div class="col">
+        <h2 class="pb-3 text-center">Burgers Devoured!</h2>
+        <ul class="list-group">
+            {{#each burgers}}
+            {{#if this.devoured}}
+            <li class="list-group-item list-group-item-action">
+                <button type="button" class="btn" disabled>
+                    {{id}}. {{burger_name}}
+                </button>
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-auto">
+        <br>
+        <br>
+        <br>
+        <form>
+            <div class="form-group align-items-center">
+                <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInput">Name</label>
+                    <input type="text" class="form-control mb-2" id="newburger" name="name" placeholder="Nom nom burger">
+                </div>
             </div>
-            <h2>Enter a burger you want to eat and hit submit!</h2>
-
-            <button type="submit">Add a Burger!</button>
         </form>
+        <div class="row justify-content-center">
+            <div class="col-auto align-items-center">
+                <h2>Enter a burger you want to eat and hit submit!</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-auto align-items-center">
+                <button type="submit">Submit Burger!</button>
+            </div>
+        </div>
     </div>
 </div>
