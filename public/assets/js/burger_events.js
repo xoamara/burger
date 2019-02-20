@@ -24,11 +24,17 @@ $(function () {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
+        if ($("#newburger").val() === "") {
+            alert("Please enter the name of a Burger you want to add to the list");
+            
+            return false;
+        }
+
         var newBurger = {
             name: $("#newburger").val().trim(),
         };
 
-        console.log ("New Burger ", newBurger);
+        console.log("New Burger ", newBurger);
 
         // Send the POST request.
         $.ajax("/api/burgers", {
