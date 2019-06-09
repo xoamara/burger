@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:3000/articles -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Game Scrape</title>
+     <link rel="stylesheet" href="./Game Scrape_files/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(131, 246, 246)
+        }
+
+        .jumbotron {
+
+        }
+
+        .card-header{
+            background: linear-gradient(white, 80%, rgb(56,56,56));
+            )
+        }
+
+        .card-footer {
+            background: linear-gradient(rgb(56, 56, 56), 20%, white);
+        }
+
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #articles {
+            display: inline-block;
+            overflow: auto;
+            width: 60%;
+            height: 700px;
+        }
+
+        #notes {
+            float: right;
+            width: 30%;
+        }
+
+        textarea,
+        input {
+            display: block;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        input {
+            height: 36px;
+            font-size: 24px;
+        }
+
+        textarea {
+            height: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card text-center">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="http://localhost:3000/articles#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>
+
+
+<div id="wrapper">
+  <h1>Scraper's Weekly Articles</h1>
+  <h2><i>All your games r belong to me.</i></h2>
+  <div class="list-group" id="articles">
+    <p data-id="5c72cbacee266e7874107285" class="list-group-item">Classic Final Fantasy feels right at home on the Switch<br>
+      <a href="https://www.theverge.com/2019/2/24/18234668/final-fantasy-9-nintendo-switch">https://www.theverge.com/2019/2/24/18234668/final-fantasy-9-nintendo-switch</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107286" class="list-group-item">Death Generator lets you put custom text in all the classic video games<br>
+      <a href="https://www.theverge.com/2019/2/23/18234985/death-generator-custom-text-classic-video-games">https://www.theverge.com/2019/2/23/18234985/death-generator-custom-text-classic-video-games</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107287" class="list-group-item">Microsoft reportedly plans to discuss next-gen Xbox consoles at E3 2019 <br>
+      <a href="https://www.theverge.com/2019/2/22/18236936/microsoft-xbox-one-next-gen-consoles-e3-2019-reveal">https://www.theverge.com/2019/2/22/18236936/microsoft-xbox-one-next-gen-consoles-e3-2019-reveal</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107288" class="list-group-item">How Devotion, Twitch’s hottest horror game, builds on the genre’s legacy<br>
+      <a href="https://www.theverge.com/2019/2/22/18236099/devotion-horror-game-steam-twitch-red-candle">https://www.theverge.com/2019/2/22/18236099/devotion-horror-game-steam-twitch-red-candle</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107289" class="list-group-item">FTC to hold a public workshop on loot box concerns this year<br>
+      <a href="https://www.theverge.com/2019/2/22/18236352/loot-box-video-game-ftc-workshop-hassan-congress">https://www.theverge.com/2019/2/22/18236352/loot-box-video-game-ftc-workshop-hassan-congress</a>
+    </p>
+    <p data-id="5c72cbacee266e787410728c" class="list-group-item">When did cutscenes start looking worse than actual video games?<br>
+      <a href="https://www.theverge.com/2019/2/22/18235914/anthem-cutscenes-low-quality-final-fantasy-cgi">https://www.theverge.com/2019/2/22/18235914/anthem-cutscenes-low-quality-final-fantasy-cgi</a>
+    </p>
+    <p data-id="5c72cbacee266e787410728d" class="list-group-item">Nvidia’s new GeForce GTX 1660 Ti promises 120 fps gaming for $279<br>
+      <a href="https://www.theverge.com/2019/2/22/18235974/nvidia-geforce-gtx-1660-ti-price-release-date-specs-features">https://www.theverge.com/2019/2/22/18235974/nvidia-geforce-gtx-1660-ti-price-release-date-specs-features</a>
+    </p>
+    <p data-id="5c72cbacee266e787410728e" class="list-group-item">Fortnite’s Marshmello concert was the game’s biggest event ever<br>
+      <a href="https://www.theverge.com/2019/2/21/18234980/fortnite-marshmello-concert-viewer-numbers">https://www.theverge.com/2019/2/21/18234980/fortnite-marshmello-concert-viewer-numbers</a>
+    </p>
+    <p data-id="5c72cbacee266e787410728a" class="list-group-item">Unearthing Hardcore, DICE’s long-lost Sega Genesis shooter<br>
+      <a href="https://www.theverge.com/2019/2/22/18234509/dice-hardcore-lost-sega-genesis-game-analogue">https://www.theverge.com/2019/2/22/18234509/dice-hardcore-lost-sega-genesis-game-analogue</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107291" class="list-group-item">Samsung’s Gear VR isn’t dead yet — will work with Galaxy S10<br>
+      <a href="https://www.theverge.com/2019/2/20/18234249/samsung-gear-vr-works-with-galaxy-s10">https://www.theverge.com/2019/2/20/18234249/samsung-gear-vr-works-with-galaxy-s10</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107293" class="list-group-item">The EPA stole music from Yoshi’s Island DS for a pro-recycling Flash game<br>
+      <a href="https://www.theverge.com/2019/2/20/18233575/nintendo-yoshi-environmental-protection-agency-epa-government-island-ds">https://www.theverge.com/2019/2/20/18233575/nintendo-yoshi-environmental-protection-agency-epa-government-island-ds</a>
+    </p>
+    <p data-id="5c72cbacee266e787410728f" class="list-group-item">Nintendo of America president Reggie Fils-Aimé is retiring<br>
+      <a href="https://www.theverge.com/2019/2/21/18235073/nintendo-america-president-reggie-fils-aime-retirement-doug-bowser">https://www.theverge.com/2019/2/21/18235073/nintendo-america-president-reggie-fils-aime-retirement-doug-bowser</a>
+    </p>
+    <p data-id="5c72cbacee266e787410728b" class="list-group-item">Fortnite’s $30 million World Cup final is happening in July<br>
+      <a href="https://www.theverge.com/2019/2/22/18235132/fortnite-world-cup-final-date-prize-money-new-york-esports">https://www.theverge.com/2019/2/22/18235132/fortnite-world-cup-final-date-prize-money-new-york-esports</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107292" class="list-group-item">Fortnite has an exclusive K-pop skin for those who preorder the Galaxy S10 Plus<br>
+      <a href="https://www.theverge.com/2019/2/20/18233766/fortnite-k-pop-skin-exclusive-galaxy-s10-plus-preorder">https://www.theverge.com/2019/2/20/18233766/fortnite-k-pop-skin-exclusive-galaxy-s10-plus-preorder</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107296" class="list-group-item">This illicit iPhone app store has been hiding in plain sight<br>
+      <a href="https://www.theverge.com/2019/2/20/18232140/apple-tutuapp-piracy-ios-apps-developer-enterprise-program-misuse">https://www.theverge.com/2019/2/20/18232140/apple-tutuapp-piracy-ios-apps-developer-enterprise-program-misuse</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107298" class="list-group-item">What to expect from the PlayStation 5<br>
+      <a href="https://www.theverge.com/2019/2/19/18231205/sony-ps5-playstation-5-rumors-specs-games">https://www.theverge.com/2019/2/19/18231205/sony-ps5-playstation-5-rumors-specs-games</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107294" class="list-group-item">100 Thieves adds former Activision exec as its e-sports empire grows<br>
+      <a href="https://www.theverge.com/2019/2/20/18231968/100-thieves-mike-sepso-activision-esports">https://www.theverge.com/2019/2/20/18231968/100-thieves-mike-sepso-activision-esports</a>
+    </p>
+    <p data-id="5c72cbacee266e787410729b" class="list-group-item">How loot boxes hooked gamers and left regulators spinning<br>
+      <a href="https://www.theverge.com/2019/2/19/18226852/loot-boxes-gaming-regulation-gambling-free-to-play">https://www.theverge.com/2019/2/19/18226852/loot-boxes-gaming-regulation-gambling-free-to-play</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107297" class="list-group-item">Fortnite dance lawyer claims someone impersonated him to derail copyright lawsuits<br>
+      <a href="https://www.theverge.com/2019/2/19/18232122/fortnite-epic-games-dance-emote-lawsuit-david-hecht-copyright-office-fraud">https://www.theverge.com/2019/2/19/18232122/fortnite-epic-games-dance-emote-lawsuit-david-hecht-copyright-office-fraud</a>
+    </p>
+    <p data-id="5c72cbacee266e787410729d" class="list-group-item">Fortnite showed us the future (and the past) of live music<br>
+      <a href="https://www.theverge.com/2019/2/18/18229471/fortnite-marshmello-pleasant-park-live-music-future-past">https://www.theverge.com/2019/2/18/18229471/fortnite-marshmello-pleasant-park-live-music-future-past</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107299" class="list-group-item">Google is holding a mysterious gaming press event at GDC next month<br>
+      <a href="https://www.theverge.com/2019/2/19/18231474/google-gaming-keynote-gdc-2019">https://www.theverge.com/2019/2/19/18231474/google-gaming-keynote-gdc-2019</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107290" class="list-group-item">Robin Hood director Otto Bathurst signed to Showtime’s Halo series<br>
+      <a href="https://www.theverge.com/2019/2/21/18234878/halo-tv-show-director-otto-bathurst-showtime">https://www.theverge.com/2019/2/21/18234878/halo-tv-show-director-otto-bathurst-showtime</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a0" class="list-group-item">Apex Legends players think its in-game items are way too expensive<br>
+      <a href="https://www.theverge.com/2019/2/16/18226709/apex-legends-microtransaction-prices-cosmetic-items-respawn-ea-debate">https://www.theverge.com/2019/2/16/18226709/apex-legends-microtransaction-prices-cosmetic-items-respawn-ea-debate</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a2" class="list-group-item">Hasbro’s new Fortnite Nerf guns launch on March 22nd, with preorders starting today<br>
+      <a href="https://www.theverge.com/2019/2/15/18226955/fortnite-hasbro-nerf-toy-guns-release-date-pricing-preorders">https://www.theverge.com/2019/2/15/18226955/fortnite-hasbro-nerf-toy-guns-release-date-pricing-preorders</a>
+    </p>
+    <p data-id="5c72cbacee266e787410729e" class="list-group-item">PlayStation exec says PSVR will see a dramatic change in next 10 years <br>
+      <a href="https://www.theverge.com/2019/2/18/18229381/playstation-vr-sony-shawn-layden-investment-development-growth">https://www.theverge.com/2019/2/18/18229381/playstation-vr-sony-shawn-layden-investment-development-growth</a>
+    </p>
+    <p data-id="5c72cbacee266e7874107295" class="list-group-item">Epic Games pulls Fortnite pre-roll ads on YouTube following child predator controversy<br>
+      <a href="https://www.theverge.com/2019/2/20/18233132/fortnite-ads-youtube-child-exploitive-predators-google">https://www.theverge.com/2019/2/20/18233132/fortnite-ads-youtube-child-exploitive-predators-google</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a5" class="list-group-item">The ‘Carlton dance’ couldn’t be copyrighted for a Fortnite lawsuit<br>
+      <a href="https://www.theverge.com/2019/2/15/18226180/copyright-office-alfonso-ribeiro-carlton-fresh-prince-dance-rejected-fortnite-nba-2k-lawsuit">https://www.theverge.com/2019/2/15/18226180/copyright-office-alfonso-ribeiro-carlton-fresh-prince-dance-rejected-fortnite-nba-2k-lawsuit</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a7" class="list-group-item">The latest Nintendo Switch bundle includes a $35 eShop gift card<br>
+      <a href="https://www.theverge.com/good-deals/2019/2/15/18215355/nintendo-switch-bundle-eshop-gift-card-gamestop-best-buy-walmart-amazon">https://www.theverge.com/good-deals/2019/2/15/18215355/nintendo-switch-bundle-eshop-gift-card-gamestop-best-buy-walmart-amazon</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a3" class="list-group-item">Niantic is tweaking Pokémon Go to settle a lawsuit with angry homeowners<br>
+      <a href="https://www.theverge.com/2019/2/15/18226604/niantic-pokemon-go-lawsuit-changes-settlement-private-property-pokestop-gym">https://www.theverge.com/2019/2/15/18226604/niantic-pokemon-go-lawsuit-changes-settlement-private-property-pokestop-gym</a>
+    </p>
+    <p data-id="5c72cbacee266e787410729a" class="list-group-item">Fortnite turns into SSX with the long-awaited driftboard<br>
+      <a href="https://www.theverge.com/2019/2/19/18231387/fortnite-driftboard-snowboard-update-740">https://www.theverge.com/2019/2/19/18231387/fortnite-driftboard-snowboard-update-740</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072aa" class="list-group-item">How the Overwatch League’s newest teams built their rosters from scratch<br>
+      <a href="https://www.theverge.com/2019/2/14/18224733/overwatch-league-expansion-toronto-paris-guangzhou">https://www.theverge.com/2019/2/14/18224733/overwatch-league-expansion-toronto-paris-guangzhou</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072ac" class="list-group-item">Neill Blomkamp’s Oats Studios released a live-action Anthem short film <br>
+      <a href="https://www.theverge.com/2019/2/14/18224813/anthem-live-action-short-film-neill-blomkamp-oats-studios-ea-bioware-watch">https://www.theverge.com/2019/2/14/18224813/anthem-live-action-short-film-neill-blomkamp-oats-studios-ea-bioware-watch</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a8" class="list-group-item">Mint copy of Super Mario Bros. sells for $100,150 at auction<br>
+      <a href="https://www.theverge.com/2019/2/14/18225317/mint-copy-super-mario-bros-100150-auction">https://www.theverge.com/2019/2/14/18225317/mint-copy-super-mario-bros-100150-auction</a>
+    </p>
+    <p data-id="5c72cbacee266e787410729c" class="list-group-item">Apex Legends is a better battle royale, but I’d rather hang out in Fortnite<br>
+      <a href="https://www.theverge.com/2019/2/18/18229778/apex-legends-fortnite-battle-royale-comparison">https://www.theverge.com/2019/2/18/18229778/apex-legends-fortnite-battle-royale-comparison</a>
+    </p>
+    <p data-id="5c72cbacee266e787410729f" class="list-group-item">Pikuniku is a weird and whimsical adventure for the Switch<br>
+      <a href="https://www.theverge.com/2019/2/17/18224928/pikuniku-nintendo-switch-steam-puzzle-platformer">https://www.theverge.com/2019/2/17/18224928/pikuniku-nintendo-switch-steam-puzzle-platformer</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072ad" class="list-group-item">Crackdown 3 review: the Netflix Original of games<br>
+      <a href="https://www.theverge.com/2019/2/14/18224550/crackdown-3-review-xbox-one-pc">https://www.theverge.com/2019/2/14/18224550/crackdown-3-review-xbox-one-pc</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a1" class="list-group-item">Here are the best Presidents’ Day 2019 deals<br>
+      <a href="https://www.theverge.com/good-deals/2019/2/16/18226114/presidents-day-2019-tech-deals-sales-discount-iphone-x-google-pixel-3-4k-tv-vizio-lg">https://www.theverge.com/good-deals/2019/2/16/18226114/presidents-day-2019-tech-deals-sales-discount-iphone-x-google-pixel-3-4k-tv-vizio-lg</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a4" class="list-group-item">Razer Blade Stealth (2019) review: the cost of compromise<br>
+      <a href="https://www.theverge.com/2019/2/15/18226158/razer-blade-stealth-2019-review-specs-price-gaming-laptop">https://www.theverge.com/2019/2/15/18226158/razer-blade-stealth-2019-review-specs-price-gaming-laptop</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a6" class="list-group-item">Fortnite’s island is being rocked by earthquakes<br>
+      <a href="https://www.theverge.com/2019/2/15/18226060/fortnite-earthquakes-tremors-island-season-8">https://www.theverge.com/2019/2/15/18226060/fortnite-earthquakes-tremors-island-season-8</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072a9" class="list-group-item">Overwatch League: all of the news about Blizzard’s ambitious e-sports league<br>
+      <a href="https://www.theverge.com/2019/2/14/18225048/overwatch-league-owl-blizzard-esports">https://www.theverge.com/2019/2/14/18225048/overwatch-league-owl-blizzard-esports</a>
+    </p>
+    <p data-id="5c72cbacee266e78741072ab" class="list-group-item">Tetris 99 is the opposite of Tetris Effect, and it’s amazing<br>
+      <a href="https://www.theverge.com/2019/2/14/18224853/tetris-99-battle-royale-nintendo-switch-review">https://www.theverge.com/2019/2/14/18224853/tetris-99-battle-royale-nintendo-switch-review</a>
+    </p>
+  </div>
+
+
+  <div id="notes">
+  </div>
+
+</div>
+<script src="./Game Scrape_files/jquery.min.js"> </script>
+<script src="./Game Scrape_files/app.js">
+</script>
+
+
+</body></html>
